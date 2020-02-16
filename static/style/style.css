@@ -1,0 +1,122 @@
+@font-face{
+	font-family:yeniyazi;
+	src: url(Righteous-Regular.ttf);
+}
+body
+{
+	background-image: url("../img/arka2.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-family:yeniyazi;
+	font-size:150%;
+	color: white;
+}
+.tricerik{
+	color: red;
+	font-size: 60%;
+	height:27px;
+	vertical-align:top;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.fiyatlar{
+	color: green;
+	text-align: right;
+}
+#sagtable{
+	border-right-style: inset;
+}
+td{
+	padding: 2.5%;
+	text-align: left;
+}
+tr{
+	line-height: 15%;
+}
+
+
+#imgozel{
+	max-width:100%;
+	min-height:100%;
+	border-radius:15px;
+	padding:0;
+	position:relative;
+	box-shadow: 0 0 0 4px white, 0 6px 4px black;
+}
+.sliderimg{
+	max-width:100%;
+	min-height:100%;
+	border-radius:20px;
+	padding:0;
+	position:relative;
+}
+#ust{
+	float:top;
+	width:100%;
+	height:90%;
+}
+#leftust{
+	padding:1%;
+	float:left;
+	width:48%;
+	height:98%;
+	display: table;
+	text-align:center;
+}
+#yemekisim1{
+	float:left;
+	width:50%;
+	height:100%;
+
+}
+#yemekisim2{
+	float:right;
+	width:50%;
+	height:100%;
+}
+#rightust{
+	float:right;
+	width:50%;
+	height:100%;
+}
+#slider{
+	float: left;
+	width:100%;
+	height:40%;
+	padding:1%;
+}
+
+#firstyanyanamenu{
+	width:100%;
+	height:60%;
+}
+
+.menuler{
+	padding: 1%;
+	float:left;
+	width:25%;
+	height:95%;
+
+}
+#alt{
+	float:bottom;
+	width:100%;
+	height:10%;
+
+}
+#leftalt{
+	float:left;
+	width:90%;
+	height:100%;
+}
+#rightalt{
+	float:right;
+	overflow:hidden;
+	width:10%;
+	height:100%;
+}

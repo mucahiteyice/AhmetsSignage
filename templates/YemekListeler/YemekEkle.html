@@ -1,0 +1,38 @@
+{% extends 'admin_paneli.html' %}
+{% block title  %}
+{{ sayfa_baslik }}
+{% endblock %}
+{% block sayfaicerigi %}
+    <br>
+
+    <div>
+    <h1 class="h3 mb-4 text-gray-800">{{sayfa_baslik}}</h1></div>
+    <br>
+   <div>
+    <form method="post">
+    {{ form.hidden_tag() }}
+         <div class="form-group" style="width:600px">
+      {{ form.yemekkodu.label }}
+      {{ form.yemekkodu(class='form-control') }}
+             </div>
+
+        <div class="form-group" style="width:600px">
+      {{ form.yemekismi.label }}
+      {{ form.yemekismi(class='form-control') }}
+       </div>
+       <div class="form-group" style="width:600px">
+      {{ form.yemekfiyati.label }}
+      {{ form.yemekfiyati(class='form-control') }}
+       </div>
+        <div class="form-group"  style="width:600px">
+      {{ form.yemekicerik.label }}
+      {{ form.yemekicerik(class='form-control') }}
+       </div>
+
+     {{ form.ekle(class='btn btn-success')}}
+
+</form>
+
+</div>
+     <br>
+{% endblock %}

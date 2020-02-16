@@ -1,0 +1,111 @@
+{% extends 'admin_paneli.html'%}
+{% block title  %}
+    Slayt Listesi
+{% endblock %}
+{% block body %}
+    <br><br>
+    <div style="margin-left: 1140px">
+        <a href="{{ url_for("menuler.eklemenu") }}" class="btn btn-success">Yeni Yemek Ekle</a></div>
+
+    <div align="center" >
+    <table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Menu Adı</th>
+        <th>Menu Fiyatı</th>
+        <th>Menu Fotoğrafı</th>
+        <th colspan="2">İşlemler</th>
+    </tr>
+    </thead>
+
+    {% for menuler in veri %}
+        <tbody>
+        <tr>
+            <td>{{ menuler.menuadi }}</td>
+              <td>{{ menuler.menufiyati }}</td>
+            <td>{{ menuler.menuresmi }}</td>
+            <td>
+                <a href="{{ url_for('menuler.menuduzenle',id=menuler.menuno)}}" class="btn btn-primary">Düzenle</a></td>
+            <td>
+
+                <a href="#" class="btn btn-danger silme-butonu"
+                data-haberbaslik="{{ menuler.menuadi }}"
+                   data-haberno="{{ menuler.menuno }}">Sil</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="silmeOnayi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Haber Silme Onayı</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="silmeMesaj">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-danger" id="btn-sil">Sil</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+    <br><br><br><br>
+
+
+    <script language="JavaScript">
+    $(document).ready(function () {
+
+
+        $("a.silme-butonu").click(function () {
+            var tiklananButon=$(this);
+            var menuadi=tiklananButon.data("haberbaslik");
+            var haberNo=tiklananButon.data("haberno");
+
+
+            $("#silmeMesaj").html(menuadi + " İsimli  Menüyü silmek istediğinizden emin misiniz?");
+            $("#btn-sil").off("click");
+            $("#btn-sil").on("click",function () {
+
+               $("#silmeOnayi").modal('hide');
+               $.post("{{ url_for('menuler.menusil') }}",
+                   {
+                       menuno:haberNo,
+                       csrf_token:'{{ csrf_token() }}'
+                   },
+                   function(sonuc,htmlkodu){
+
+                   if (sonuc["sonuc"] === "TAMAM")
+                   {
+                       location.reload();
+                   }
+                   else
+                   {
+                       alert("Hata")
+                   }
+
+
+                 });
+            });
+
+            $("#silmeOnayi").modal();
+
+
+        });
+    });
+
+    </script>
+
+
+
+
+{% endblock %}

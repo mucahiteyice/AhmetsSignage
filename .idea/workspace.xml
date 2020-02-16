@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84b6d7c6-14ed-4f14-ae2c-3288995492ed" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ahmedslounge" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ahmedslounge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ahmedslounge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ahmedslounge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="kullanici: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XlC2NXeiBZQakwYa9aB1YRynzD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/style" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MukkoPc\Desktop\Burger\static\style" />
+      <recent name="C:\Users\MukkoPc\Desktop\Burger\static\img" />
+      <recent name="C:\Users\Ertan-PC\Desktop\WebServis\Burger" />
+      <recent name="C:\Users\Ertan-PC\Desktop\WebServis\Burger\templates\YemekListeler" />
+      <recent name="C:\Users\Ertan-PC\Desktop\WebServis\Burger\templates\MenuListeler" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MukkoPc\Desktop\Burger\static\style" />
+      <recent name="C:\Users\MukkoPc\Desktop\Burger\static\img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Burger" type="Python.FlaskServer">
+      <module name="Burger" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84b6d7c6-14ed-4f14-ae2c-3288995492ed" name="Default Changelist" comment="" />
+      <created>1581611085410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581611085410</updated>
+      <workItem from="1581611105429" duration="2237000" />
+      <workItem from="1581613674304" duration="13601000" />
+      <workItem from="1581630554341" duration="467000" />
+      <workItem from="1581631226683" duration="6730000" />
+      <workItem from="1581638215542" duration="5430000" />
+      <workItem from="1581643725697" duration="919000" />
+      <workItem from="1581644730294" duration="1312000" />
+      <workItem from="1581683906763" duration="955000" />
+      <workItem from="1581700395096" duration="43000" />
+      <workItem from="1581714824997" duration="754000" />
+      <workItem from="1581802821442" duration="814000" />
+      <workItem from="1581804271523" duration="3124000" />
+      <workItem from="1581807588758" duration="5370000" />
+      <workItem from="1581813405632" duration="3288000" />
+      <workItem from="1581817360229" duration="382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="402" y="0" key="#Burger" timestamp="1581631275379">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="402" y="0" key="#Burger/0.0.1366.738@0.0.1366.738" timestamp="1581631275379" />
+    <state x="275" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581813346957">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1581813346957" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1581804736485">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1581804736485" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1581817741688">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581817741688" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1581817741688">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581817741688" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1581817741688">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581817741688" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1581817741688">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581817741688" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581633875446">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738@0.0.1366.738" timestamp="1581633875446" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1581817420184">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1581817420184" />
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1581813406956">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581813406956" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Burger$Burger.coverage" NAME="Burger Coverage Results" MODIFIED="1581864659484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

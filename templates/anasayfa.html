@@ -1,0 +1,102 @@
+
+
+{% extends 'Temel.html' %}
+{% block title %}
+    Anasayfa
+{% endblock %}
+
+{% block body %}
+    <div id="ust">
+        <div id="leftust">
+            <div id="yemekisim1">
+                <table id="sagtable">
+                    {% for yemekler1 in veri %}
+                        <tbody>
+                        <tr>
+                            <td class="td">{{ yemekler1.yemekisim }}</td>
+                            <td class="fiyatlar">{{ yemekler1.yemekFiyati }}&nbsp;₺</td>
+                        </tr>
+                        <tr class="tricerik">
+                            <td class="tdicerik"> &emsp;{{ yemekler1.yemekicerik }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+
+            </div>
+            <div id="yemekisim2">
+                <table>
+                    {% for yemekler2 in veri1 %}
+                        <tbody>
+                        <tr>
+                            <td class="td">{{ yemekler2.yemekismi2 }}</td>
+                            <td class="fiyatlar">{{ yemekler2.yemekFiyati2 }}&nbsp;₺</td>
+                        </tr>
+                        <tr class="tricerik">
+                            <td class="td"> &emsp;{{ yemekler2.yemekicerik2 }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div id="rightust">
+            <div id="slider">
+                <div class="carousel slide" data-ride="carousel" >
+                    <div class="carousel-inner">
+                        {% for slayt in veri3 %}
+                            <div class="carousel-item {{ slayt.slayttipi}}" >
+                                <img class="sliderimg"  src="{{ slayt.slaytfotosu }}"  >
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div id="firstyanyanamenu">
+                <table>
+                    <thead>
+                    <tr>
+                        {% for menuler in veri2 %}
+                            <th class="menuler"><img id="imgozel" src="{{ menuler.menuresmi }}"></th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="alt">
+        <div id="leftalt">
+            <marquee direction=left>{% for yemekler1 in veri %}{{ yemekler1.yemekisim }}&nbsp; &nbsp;{{ yemekler1.yemekFiyati }} ₺ &emsp;
+            {% endfor %}{% for yemekler2 in veri1 %}{{ yemekler2.yemekismi2 }} &nbsp; &nbsp;{{ yemekler2.yemekFiyati2 }} ₺  &emsp;
+            {% endfor %}</marquee>
+        </div>
+        <div id="rightalt">
+            <script language="javascript" type="text/javascript">
+                function tarihGoster(){
+                    var date=new Date();
+                    document.getElementById("saatgoster").innerHTML=" "+date.toLocaleTimeString();
+                    document.getElementById("tarihgoster").innerHTML=" "+date.toLocaleDateString();
+                }
+                function yenile(){
+                    setInterval("tarihGoster()",1000);
+                }
+            </script>
+            </head>
+            <center>
+                <div class="carousel slide" data-ride="carousel" >
+                    <div class="carousel-inner">
+                        <body onload="yenile()">
+                        <div id="saatgoster" class="carousel-item active" >
+                        </div>
+                        <div id="tarihgoster" class="carousel-item " >
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+{% endblock %}

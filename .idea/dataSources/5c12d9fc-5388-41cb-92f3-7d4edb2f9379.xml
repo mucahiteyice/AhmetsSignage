@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="ahmedslounge">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.17">
+    <root id="1">
+      <ServerVersion>3.25.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="alembic_version"/>
+    <table id="7" parent="2" name="kullanici"/>
+    <table id="8" parent="2" name="menuler"/>
+    <table id="9" parent="2" name="slayt"/>
+    <table id="10" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="11" parent="2" name="yemekler1"/>
+    <table id="12" parent="2" name="yemekler2"/>
+    <column id="13" parent="6" name="version_num">
+      <Position>1</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="14" parent="6" name="sqlite_autoindex_alembic_version_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>version_num</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="15" parent="6" name="alembic_version_pkc">
+      <ColNames>version_num</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_alembic_version_1</UnderlyingIndexName>
+    </key>
+    <column id="16" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="7" name="kullaniciadi">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="18" parent="7" name="sifre">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="19" parent="7" name="resim">
+      <Position>4</Position>
+      <DataType>VARCHAR(60)|0s</DataType>
+    </column>
+    <key id="20" parent="7">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="8" name="menuno">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="8" name="menuresmi">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="23" parent="8" name="menuadi">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="24" parent="8" name="menufiyati">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="25" parent="8" name="menutipi">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="26" parent="8" name="menuid">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <key id="27" parent="8">
+      <ColNames>menuno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="9" name="slaytno">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="9" name="slaytfiyati">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="30" parent="9" name="slaytfotosu">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="31" parent="9" name="slaytbas">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="32" parent="9" name="slayttipi">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="33" parent="9" name="slaytid">
+      <Position>6</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <key id="34" parent="9">
+      <ColNames>slaytno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="10" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="36" parent="10" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="37" parent="10" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="38" parent="10" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="39" parent="10" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="40" parent="11" name="no">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="11" name="yemekİsmi">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="42" parent="11" name="yemekFiyati">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="43" parent="11" name="yemekİcerik">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="44" parent="11" name="yemekisim">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="45" parent="11" name="yemekicerik">
+      <Position>6</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="46" parent="11" name="yemekid1">
+      <Position>7</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <key id="47" parent="11">
+      <ColNames>no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="48" parent="12" name="yemekno">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="12" name="yemekİsmi2">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="50" parent="12" name="yemekFiyati2">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="51" parent="12" name="yemekİcerik2">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="52" parent="12" name="yemekicerik2">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="53" parent="12" name="yemekismi2">
+      <Position>6</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="54" parent="12" name="yemekid2">
+      <Position>7</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <key id="55" parent="12">
+      <ColNames>yemekno</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
